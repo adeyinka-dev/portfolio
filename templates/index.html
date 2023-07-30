@@ -1,11 +1,82 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 <body>
-    <h2>Hello World!!</h2>
+    <div class="hero">
+        <div class="navbar">
+            <img src="{% static 'img/logo2.png' %}" alt="logo" class="logo">
+            <button onclick="location.href='mailto:makindeyinkax@gmail.com'"><i class="fa-regular fa-envelope"></i></button>
+        </div>
+
+
+        <div class="content">
+            <h4> Adeyinka Makinde </h4>
+            <h3>Full-Stack Maestro & <br>
+                Software Engineering Virtuoso</h3>
+            <p>I'm a full-stack developer and software engineer at heart,<br>I harness Django and front-end tech to build streamlined management solutions. <br>
+                 More than just coding, it's about sculpting digital experiences that reshape business operations. 
+                <br>Welcome to full-stack mastery reimagined
+            </p>
+            <span class="stack-icons">
+                <i class="fa-brands fa-python" style="color: #4584b6;"></i>
+                <i class="devicon-django-plain colored"></i>
+                <i class="fa-brands fa-square-js" style="color: #F0DB4F;"></i> 
+                <i class="fa-brands fa-react" style="color: #61DBFB;"></i> 
+                <i class="fa-brands fa-square-git" style="color: #f34f29;"></i>
+                <i class="fa-solid fa-database" style="color: #092e20;"></i>
+            </span>
+            <br>
+
+            <div class="button container">
+                <a href="https://github.com/adeyinka-dev/stama" target="_blank"><button>My Projects</button></a>
+                <a href="/files/mycvweb.pdf" download><button><i class="fa-solid fa-download"></i> My CV</button></a>
+            </div>
+            
+
+
+        </div>
+        <div class="side-bar">
+            <i class="fa-solid fa-bars menu" style="color: #000000;"></i>
+            <div class="social-links">
+                <a href="https://twitter.com/Elvizier" target="_blank"><i class="fa-brands fa-twitter" style="color: #F8F8FF;"></i></a>
+                <a href="https://www.linkedin.com/in/joseph-makinde-0a1173225/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #F8F8FF;"></i></a>
+                <a href="https://github.com/adeyinka-dev" target="_blank"><i class="fa-brands fa-square-github" style="color: #F8F8FF;"></i></a>
+            </div>
+
+            <div class="useful-links">
+                <i class="fa-solid fa-barcode" style="color: #F8F8FF;"></i>
+                <i class="fa-solid fa-share-nodes" style="color: #000000;" id="shareme"></i>
+            </div>
+
+        </div>
+
+        <div class="moving-icons">
+            <i class="fa-regular fa-circle" style="color: #DE0029;"></i>
+            <i class="fa-regular fa-square" style="color: #00439C;"></i>
+            <i class="fa-solid fa-x" style="color: #F3C202;"></i>
+            <i class="fa-regular fa-star" style="color: #00AA9E;"></i>
+            <i class="fa-regular fa-circle" style="color: #F3C202;"></i>
+            <i class="fa-solid fa-x" style="color: #00439C;"></i>
+            <i class="fa-regular fa-square" style="color: #DE0029;"></i>
+            <i class="fa-regular fa-star" style="color: #DE0029;"></i>
+        </div>
+    
+    </div>
+
+    <div class="footer">
+        <a href="https://twitter.com/Elvizier" target="_blank"><i class="fa-brands fa-twitter" style="color: #26a7de;"></i></a>
+        <a href="https://github.com/adeyinka-dev" target="_blank"><i class="fa-brands fa-square-github" style="color: #333;"></i></a>
+        <a href="https://www.linkedin.com/in/joseph-makinde-0a1173225/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #0072b1;"></i></a>
+    </div>
+
 </body>
 </html>
