@@ -8,6 +8,14 @@
     font-family: 'Roboto Mono', monospace;
 }
 
+body {
+    visibility: hidden;
+}
+
+body.js-loaded {
+    visibility: visible;
+}
+
 
 .hero {
     width: 100%;
@@ -72,6 +80,11 @@ h3 {
     margin: 5px 0 15px;
     line-height: 50px;
     color: #FF7F11;
+    transition: all 0.5s linear;
+}
+
+#lastline {
+    visibility: hidden;
 }
 
 
@@ -257,6 +270,38 @@ h3 {
     }
     .content p {
         font-size: small;
+    }
+
+    .moving-icons i:nth-child(1){
+        font-size: 12px;
+    }
+    .moving-icons i:nth-child(2){
+        animation-delay: 1s;
+        font-size: 12px;
+    }
+    .moving-icons i:nth-child(3){
+        animation-delay: 3s;
+        font-size: 10px;
+    }
+    .moving-icons i:nth-child(4){
+        animation-delay: 4s;
+        font-size: 12px;
+    }
+    .moving-icons i:nth-child(5){
+        animation-delay: 5s;
+        font-size: 12px;
+    }
+    .moving-icons i:nth-child(6){
+        animation-delay: 6s;
+        font-size: 12px;
+    }
+    .moving-icons i:nth-child(7){
+        animation-delay: 7s;
+        font-size: 12px;
+    }
+    .moving-icons i:nth-child(8){
+        animation-delay: 8s;
+        font-size: 12px;
     }
 }
 
